@@ -33,7 +33,7 @@ const isProduction = process.env.NODE_ENV === "production";
 const domain = process.env.APP_URL || `http://localhost:${PORT}`;
 
 app.listen(PORT, HOST, () => {
-  console.log(`🚀 Server running on ${domain}`);
+  console.log(`🚀 Server running on http://${HOST}:${PORT}`);
 
   // Update Swagger server info
   swaggerDocument.servers = [
